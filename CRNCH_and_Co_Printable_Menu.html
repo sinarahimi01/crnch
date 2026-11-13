@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CRNCH & Co. | Printable Menu</title>
+<style>
+  @page { size: letter; margin: 0.45in; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:#eee9e2; color:#25221f; font-family:Arial,Helvetica,sans-serif; }
+  .toolbar { max-width:1100px; margin:18px auto; text-align:center; }
+  .toolbar button { background:#222; color:white; border:0; padding:12px 20px; border-radius:5px; font-size:15px; cursor:pointer; }
+  .menu { max-width:8.5in; margin:18px auto; background:#fffdf9; padding:0.42in; box-shadow:0 3px 18px #0002; }
+  header { text-align:center; border-bottom:3px solid #a94c2b; padding-bottom:14px; margin-bottom:20px; }
+  .brand { font-size:34px; letter-spacing:3px; font-weight:900; }
+  .tagline { margin-top:5px; font-size:12px; letter-spacing:2px; text-transform:uppercase; color:#a94c2b; }
+  h2 { color:#a94c2b; font-size:17px; letter-spacing:1.5px; text-transform:uppercase; border-bottom:1px solid #d9c8b9; padding-bottom:5px; margin:20px 0 12px; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:13px 16px; }
+  .item { display:grid; grid-template-columns:100px 1fr; gap:10px; break-inside:avoid; align-items:start; }
+  .item img { width:100px; height:94px; object-fit:cover; border-radius:4px; background:#eee; }
+  .nameprice { display:flex; justify-content:space-between; gap:8px; font-size:12px; font-weight:800; text-transform:uppercase; }
+  .price { white-space:nowrap; color:#a94c2b; }
+  .desc { margin-top:5px; font-size:10px; line-height:1.35; color:#5c554f; }
+  .compact .item { grid-template-columns:1fr; }
+  .compact .item img { display:none; }
+  .compact .desc { margin-top:3px; }
+  .two-col-text { columns:2; column-gap:24px; }
+  .text-item { break-inside:avoid; margin-bottom:8px; font-size:11px; line-height:1.35; }
+  .text-item strong { text-transform:uppercase; }
+  .text-item .price { float:right; font-weight:bold; }
+  .note { font-size:10px; color:#655c55; text-align:center; margin-top:20px; border-top:1px solid #d9c8b9; padding-top:10px; }
+  .pagebreak { break-before:page; }
+  @media print {
+    body { background:white; }
+    .toolbar { display:none; }
+    .menu { margin:0; max-width:none; box-shadow:none; padding:0; }
+    .pagebreak { break-before:page; }
+    a { color:inherit; text-decoration:none; }
+  }
+  @media (max-width:650px) {
+    .menu { margin:8px; padding:18px; }
+    .grid { grid-template-columns:1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="toolbar"><button onclick="window.print()">Print / Save as PDF</button><p>For best results, choose Letter paper, Portrait, and enable background graphics if offered.</p></div>
+<main class="menu">
+<header>
+  <div class="brand">CRNCH &amp; CO.</div>
+  <div class="tagline">Bread Bowls &amp; More · Fresh ingredients. Bold flavours.</div>
+</header>
+
+<h2>Bread Bowls</h2>
+<div class="grid">
+  <article class="item"><img src="https://spontaneous-concha-ddb636.netlify.app/steak.jpg"><div><div class="nameprice"><span>Philly Steak</span><span class="price">$16.99</span></div><div class="desc">Finely shaved steak, sauteed peppers, mushrooms, onions w/ melted provolone.</div></div></article>
+  <article class="item"><img src="https://spontaneous-concha-ddb636.netlify.app/meatballbowl.jpg"><div><div class="nameprice"><span>M-Balls</span><span class="price">$15.99</span></div><div class="desc">Homemade beef meatballs w/ tomato basil sauce, parmesan &amp; mozzarella.</div></div></article>
+  <article class="item"><img src="https://spontaneous-concha-ddb636.netlify.app/chilli.jpg"><div><div class="nameprice"><span>Chili</span><span class="price">$13.99</span></div><div class="desc">Slow simmered beef chili, beans, onions, peppers.</div></div></article>
+  <article class="item"><img src="https://spontaneous-concha-ddb636.netlify.app/CHIKEN%20POT%20PIE.jpg"><div><div class="nameprice"><span>Chicken Pot Pie</span><span class="price">$15.99</span></div><div class="desc">Tender chicken,carrots,potatoes,peas in a rich herb creamy sauce</div></div></article>
+  <article class="item"><img src="https://spontaneous-concha-ddb636.netlify.app/BUTTER%20CHICKEN.jpg"><div><div class="nameprice"><span>Butter Chicken</span><span class="price">$15.99</span></div><div class="desc">Tender chicken simmered in a rich creamy curry sauce.</div></div></article>
+  <article class="item"><img src="https://spontaneous-concha-ddb636.netlify.app/pasta%20bowl.png"><div><div class="nameprice"><span>Mac and Cheese</span><span class="price">$14.99</span></div><div class="desc">Creamy macaroni tossed in a rich, melted cheddar, mozzarella, and provolone cheese sauce with parmesan.</div></div></article>
+</div>
+
+<h2>Crnchwiches</h2>
+<div class="grid">
+  <article class="item"><img src="https://spontaneous-concha-ddb636.netlify.app/italian.jpeg"><div><div class="nameprice"><span>The Italian</span><span class="price">$14.99</span></div><div class="desc">Salami, capicola, mortadella, arugula, tomato slices, garlic mayo, w/ salt/vinegar chips.</div></div></article>
+  <article class="item"><img src="https://spontaneous-concha-ddb636.netlify.app/chickencrnch.jpeg"><div><div class="nameprice"><span>Chicken Crnch</span><span class="price">$15.99</span></div><div class="desc">Roasted chicken strips, mayo, lettuce, tomato slices w/ ranch chips.</div></div></article>
+  <article class="item"><img src="https://spontaneous-concha-ddb636.netlify.app/roastbeefcrnch.jpeg"><div><div class="nameprice"><span>Roastbeef</span><span class="price">$15.99</span></div><div class="desc">Thinly sliced beef, horseradish, mayo, lettuce, dill pickle chips.</div></div></article>
+  <article class="item"><img src="https://spontaneous-concha-ddb636.netlify.app/turkeycrnch.jpeg"><div><div class="nameprice"><span>Turkey Crnch Club</span><span class="price">$14.99</span></div><div class="desc">Roasted turkey, bacon, mayo, lettuce, ketchup chips.</div></div></article>
+  <article class="item"><img src="https://spontaneous-concha-ddb636.netlify.app/tunacrnch.jpeg"><div><div class="nameprice"><span>Tuna Crnch</span><span class="price">$13.99</span></div><div class="desc">Tuna, mayo, lettuce, sour cream &amp; onion chips.</div></div></article>
+  <article class="item"><img src="https://spontaneous-concha-ddb636.netlify.app/crazycrnch.png"><div><div class="nameprice"><span>The Crazy Crnch</span><span class="price">$12.99</span></div><div class="desc">Nutella, bananas, plain ruffle chips.</div></div></article>
+</div>
+
+<div class="pagebreak"></div>
+<header>
+  <div class="brand">CRNCH &amp; CO.</div>
+  <div class="tagline">Menu · Page 2</div>
+</header>
+<h2>Paninis</h2>
+<div class="grid">
+  <article class="item"><img src="https://spontaneous-concha-ddb636.netlify.app/chikenparm.jpg"><div><div class="nameprice"><span>Chicken Parm</span><span class="price">$14.99</span></div><div class="desc">Breaded chicken cutlet, housemade tomato/basil sauce with mozzarella and parmesan cheese.</div></div></article>
+  <article class="item"><img src="https://spontaneous-concha-ddb636.netlify.app/schenitzle.jpg"><div><div class="nameprice"><span>Schnitzel</span><span class="price">$14.99</span></div><div class="desc">Breaded chicken cutlet, romaine lettuce, mustard, and housemade mayonnaise.</div></div></article>
+  <article class="item"><img src="https://spontaneous-concha-ddb636.netlify.app/biteme.jpg"><div><div class="nameprice"><span>Bite-Me</span><span class="price">$15.99</span></div><div class="desc">Chicken Parmesan, housemade Bolognese, provolone &amp; parmesan cheese.</div></div></article>
+</div>
+
+<h2>Salads</h2>
+<div class="grid">
+  <article class="item"><img src="https://spontaneous-concha-ddb636.netlify.app/caesar.jpg"><div><div class="nameprice"><span>Caesar</span><span class="price">SM $7.99 · LG $12.99</span></div><div class="desc">Homemade caesar dressing, romaine, croutons.</div></div></article>
+  <article class="item"><img src="https://spontaneous-concha-ddb636.netlify.app/greek.webp"><div><div class="nameprice"><span>Greek</span><span class="price">SM $8.99 · LG $13.99</span></div><div class="desc">Goat cheese, lettuce, cucumbers, tomatoes, olives, onions, red wine vinaigrette.</div></div></article>
+  <article class="item"><img src="https://spontaneous-concha-ddb636.netlify.app/garden.webp"><div><div class="nameprice"><span>Garden</span><span class="price">SM $6.99 · LG $11.99</span></div><div class="desc">Mix greens, cherry tomatoes, cucumber, honey balsamic dressing.</div></div></article>
+</div>
+
+<h2>Pastas</h2>
+<div class="grid">
+  <article class="item"><img src="https://spontaneous-concha-ddb636.netlify.app/pomodoro.webp"><div><div class="nameprice"><span>Pomodoro</span><span class="price">$12.99</span></div><div class="desc">Spaghetti, Basil garlic tomato sauce.</div></div></article>
+  <article class="item"><img src="https://spontaneous-concha-ddb636.netlify.app/alfredo.webp"><div><div class="nameprice"><span>Alfredo</span><span class="price">$13.99</span></div><div class="desc">Fettucine, honey cream sauce, parmesan cheese. Add Chicken $4.99</div></div></article>
+  <article class="item"><img src="https://spontaneous-concha-ddb636.netlify.app/bolognese.webp"><div><div class="nameprice"><span>Bolognese</span><span class="price">$15.99</span></div><div class="desc">Rigatoni w/ beef basil tomato sauce.</div></div></article>
+  <article class="item"><img src="https://spontaneous-concha-ddb636.netlify.app/allavodka.webp"><div><div class="nameprice"><span>Alla Vodka</span><span class="price">$14.99</span></div><div class="desc">Penne w/ tomato, cream basil vodka sauce. Add Chicken $4.99</div></div></article>
+  <article class="item"><img src="https://spontaneous-concha-ddb636.netlify.app/pesto.png"><div><div class="nameprice"><span>Pesto</span><span class="price">$14.99</span></div><div class="desc">Fettucine w/ cream pesto mushroom sauce. Add Chicken $4.99</div></div></article>
+  <article class="item"><img src="https://spontaneous-concha-ddb636.netlify.app/lasagna.webp"><div><div class="nameprice"><span>Lasagna</span><span class="price">$16.99</span></div><div class="desc">All beef, tomato sauce, mozzarella, parmesan.</div></div></article>
+</div>
+
+<div class="pagebreak"></div>
+<header>
+  <div class="brand">CRNCH &amp; CO.</div>
+  <div class="tagline">Menu · Page 3</div>
+</header>
+<h2>Daily Specials</h2>
+<div class="grid">
+  <article class="item"><img src="https://spontaneous-concha-ddb636.netlify.app/pasta%20special.jpg"><div><div class="nameprice"><span>Pasta Combo</span><span class="price">$20.99</span></div><div class="desc">Pomodoro Pasta Served with a side salad and your choice of a regular drink.</div></div></article>
+  <article class="item"><img src="https://spontaneous-concha-ddb636.netlify.app/combo1.jpg"><div><div class="nameprice"><span>Dinner for Two</span><span class="price">$27.99</span></div><div class="desc">Bowl &amp; Crnchwich Combo: Choose any one bread bowl and any one crunchwich.</div></div></article>
+  <article class="item"><img src="https://spontaneous-concha-ddb636.netlify.app/combo2.jpg"><div><div class="nameprice"><span>Bowl, Drink &amp; Cannoli</span><span class="price">$19.99</span></div><div class="desc">Any bowl served with your choice of a regular drink and a fresh cannoli.</div></div></article>
+</div>
+
+<h2>Add Ons</h2>
+<div class="two-col-text">
+  <div class="text-item"><strong>Veggies</strong><span class="price">$0.99</span><br>Onions · Peppers · Mushrooms · Tomatoes · Lettuce · Arugula</div>
+  <div class="text-item"><strong>Premium Meats</strong><span class="price">$4.99</span><br>Meatballs · Chicken · Bolognese</div>
+  <div class="text-item"><strong>Deli Meats</strong><span class="price">$1.99</span><br>Mortadella · Salami · Capicola · Turkey · Bacon</div>
+  <div class="text-item"><strong>Cheeses</strong><span class="price">$2.99</span><br>Mozzarella · Provolone · Parmesan · Cheddar · Smoked Mozzarella</div>
+</div>
+
+<h2>Desserts &amp; Drinks</h2>
+<div class="two-col-text">
+  <div class="text-item"><strong>Desserts</strong><br>Mini Cannoli <span class="price">$2.75/ea.</span><br>Gelato <span class="price">$5.50</span><br>Bread Pudding <span class="price">$4.99</span></div>
+  <div class="text-item"><strong>Regular Drinks</strong><span class="price">$2.75</span><br>Coke · Diet Coke · Coke Zero · Canada Dry · Sprite · Eska</div>
+  <div class="text-item"><strong>Premium Drinks</strong><span class="price">$3.50</span><br>Pop Shoppe · San Pelligrino · Perrier</div>
+</div>
+
+<div class="note">CRNCH &amp; CO. · 850 King St West, Toronto, ON · (416) 363-9100 · info@eatcrnch.com</div>
+</main>
+</body>
+</html>
