@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRNCH & Co | Menu</title>
+    <title>CRNCH &amp; CO. | Menu</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -124,6 +124,7 @@
             background-color: var(--primary-color);
             padding: 0.4rem 1.2rem;
             border-radius: 25px;
+            text-decoration: none;
         }
 
         .nav-highlight:hover {
@@ -158,7 +159,7 @@
             letter-spacing: 1px;
         }
 
-        /* --- Our Story Section (Full-Width Black like Catering) --- */
+        /* --- Our Story Section (Before Menu, Black Background like Catering) --- */
         .story-section {
             background-color: #000000;
             width: 100%;
@@ -297,6 +298,7 @@
             color: var(--primary-color);
             font-family: var(--font-heading);
             font-weight: 700;
+            white-space: nowrap;
         }
 
         .item-content p {
@@ -361,7 +363,7 @@
 
         .contact-info h2 {
             font-size: 2.5rem;
-            color: var(--text-main);
+            color: var(--primary-color);
             margin-bottom: 1rem;
             line-height: 1.1;
         }
@@ -375,13 +377,24 @@
         }
 
         .address-text, .email-text, .phone-text {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 800;
             color: var(--text-main);
             margin: 0;
-            line-height: 1.2;
+            line-height: 1.3;
             display: flex;
             align-items: center;
+        }
+
+        .contact-details a {
+            color: var(--text-main);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-details a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
         }
 
         /* Hidden on desktop since we use .contact-divider instead */
@@ -475,17 +488,17 @@
             /* Changed for Stacked Mobile Layout */
             .contact-details { 
                 flex-direction: column; 
-                align-items: flex-start; /* Aligns the bullets neatly on the left */
+                align-items: flex-start;
                 width: fit-content; 
-                margin: 0 auto; /* Centers the whole block */
+                margin: 0 auto;
                 gap: 0.8rem; 
             }
             .address-text, .email-text, .phone-text { font-size: 1.3rem; }
             
-            .contact-divider { display: none; } /* Hide the horizontal dividers */
+            .contact-divider { display: none; }
             
             .address-text::before, .email-text::before, .phone-text::before {
-                display: block; /* Show the leading bullet points */
+                display: block;
             }
         }
     </style>
@@ -494,8 +507,8 @@
 
     <header>
         <div class="logo-placeholder">
-            <img src="photo_2026-05-14_14-21-56.jpg" alt="CRNCH & Co Logo" class="logo-img">
-            CRNCH & Co.
+            <img src="photo_2026-05-14_14-21-56.jpg" alt="CRNCH &amp; CO. Logo" class="logo-img">
+            CRNCH &amp; CO.
         </div>
         
         <div class="menu-toggle" id="mobile-menu">
@@ -515,18 +528,17 @@
     </header>
 
     <section class="hero">
-        <h1>Bread Bowls & More</h1>
-     
+        <h1>Bread Bowls &amp; More</h1>
     </section>
 
-    <!-- OUR STORY SECTION (Before Menu, Black Background like Catering) -->
+    <!-- 1. OUR STORY -->
     <section id="story" class="story-section">
         <div class="story-container">
             <h2 class="main-section-title" style="color: #ffffff; margin-bottom: 2.5rem;">Our Story</h2>
-            <p class="story-lead">CRNCH & CO. was born from a love of food, culture and creativity.</p>
-            <p>Inspired by Sicilian roots and flavours from around the world, we take traditional favourites and give them an unexpected twist.</p>
+            <p class="story-lead">CRNCH &amp; CO. was born from a love of food, culture and creativity.</p>
+            <p>Inspired by our Sicilian roots and flavours from around the world, we take traditional favourites and give them an unexpected twist.</p>
             <p>From our signature bread bowls to our CRNCHwiches, pastas and more, we’re all about bold flavours, comfort and bringing something different to the table.</p>
-            <p class="story-signoff">Fresh ingredients. Bold flavours, That’s CRNCH!</p>
+            <p class="story-signoff">Fresh ingredients. Bold flavours. That’s CRNCH!</p>
         </div>
     </section>
 
@@ -535,6 +547,7 @@
             <h2 class="main-section-title">Our Menu</h2>
         </div>
 
+        <!-- 2. BREAD BOWLS -->
         <div class="category-block">
             <h3 class="category-title">Bread Bowls</h3>
             <div class="items-grid">
@@ -545,17 +558,17 @@
                             <h4>PHILLY STEAK</h4>
                             <span class="item-price">$16.99</span>
                         </div>
-                        <p>Finely shaved steak, sauteed peppers, mushrooms, onions w/ melted provolone.</p>
+                        <p>Thinly shaved steak, sautéed peppers, mushrooms and onions, topped with melted provolone.</p>
                     </div>
                 </div>
                 <div class="menu-item-card">
-                    <img src="meatballbowl.jpg" alt="Meat Balls Bread Bowl" class="item-image">
+                    <img src="meatballbowl.jpg" alt="Meatball Bread Bowl" class="item-image">
                     <div class="item-content">
                         <div class="item-title-row">
-                            <h4>Meatball</h4>
+                            <h4>MEATBALL</h4>
                             <span class="item-price">$15.99</span>
                         </div>
-                        <p>Homemade beef meatballs w/ tomato basil sauce, parmesan & mozzarella.</p>
+                        <p>Homemade beef meatballs simmered in tomato-basil sauce, topped with Parmesan and mozzarella.</p>
                     </div>
                 </div>
                 <div class="menu-item-card">
@@ -565,17 +578,17 @@
                             <h4>CHILI</h4>
                             <span class="item-price">$13.99</span>
                         </div>
-                        <p>Slow simmered beef chili, beans, onions, peppers.</p>
+                        <p>Slow-simmered beef chili with beans, onions and peppers.</p>
                     </div>
                 </div>
                 <div class="menu-item-card">
-                    <img src="CHIKEN POT PIE.jpg" alt="Chicken Pot Pie" class="item-image">
+                    <img src="CHIKEN POT PIE.jpg" alt="Chicken Pot Pie Bread Bowl" class="item-image">
                     <div class="item-content">
                         <div class="item-title-row">
                             <h4>CHICKEN POT PIE</h4>
                             <span class="item-price">$15.99</span>
                         </div>
-                        <p>Tender chicken,carrots,potatoes,peas in a rich herb creamy sauce</p>
+                        <p>Tender chicken, carrots and peas in a rich, creamy herb sauce.</p>
                     </div>
                 </div>
                 <div class="menu-item-card">
@@ -585,24 +598,25 @@
                             <h4>BUTTER CHICKEN</h4>
                             <span class="item-price">$15.99</span>
                         </div>
-                        <p>Tender chicken simmered in a rich creamy curry sauce.</p>
+                        <p>Tender chicken simmered in a rich, creamy butter sauce.</p>
                     </div>
                 </div>
                 <div class="menu-item-card">
-                    <img src="pasta bowl.png" alt="Mac and Cheese" class="item-image">
+                    <img src="pasta bowl.png" alt="Mac &amp; Cheese Bread Bowl" class="item-image">
                     <div class="item-content">
                         <div class="item-title-row">
-                            <h4>Mac and Cheese</h4>
+                            <h4>MAC &amp; CHEESE</h4>
                             <span class="item-price">$14.99</span>
                         </div>
-                        <p>Creamy macaroni tossed in a rich, melted cheddar, mozzarella, and provolone cheese sauce with parmesan</p>
+                        <p>Noodles tossed in a rich, creamy three-cheese sauce.</p>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- 3. CRNCHWICHES -->
         <div class="category-block">
-            <h3 class="category-title">Crnchwiches</h3>
+            <h3 class="category-title">CRNCHwiches</h3>
             <div class="items-grid">
                 <div class="menu-item-card">
                     <img src="italian.jpeg" alt="The Italian" class="item-image">
@@ -611,62 +625,63 @@
                             <h4>THE ITALIAN</h4>
                             <span class="item-price">$14.99</span>
                         </div>
-                        <p>Salami, capicola, mortadella, arugula, tomato slices, italian mayo, w/  chips.</p>
+                        <p>Salami, capicola, mortadella, arugula, fresh tomato slices and Italian mayo. Served with chips.</p>
                     </div>
                 </div>
                 <div class="menu-item-card">
-                    <img src="chickencrnch.jpeg" alt="Chicken Crnch" class="item-image">
+                    <img src="chickencrnch.jpeg" alt="Chicken CRNCH" class="item-image">
                     <div class="item-content">
                         <div class="item-title-row">
                             <h4>CHICKEN CRNCH</h4>
                             <span class="item-price">$15.99</span>
                         </div>
-                        <p>Roasted chicken strips, garlic mayo, lettuce, tomato slices w/  chips.</p>
+                        <p>Roasted chicken strips, garlic mayo, lettuce and fresh tomato slices. Served with chips.</p>
                     </div>
                 </div>
                 <div class="menu-item-card">
                     <img src="roastbeefcrnch.jpeg" alt="Pastrami" class="item-image">
                     <div class="item-content">
                         <div class="item-title-row">
-                            <h4>Pastrami</h4>
+                            <h4>PASTRAMI</h4>
                             <span class="item-price">$15.99</span>
                         </div>
-                        <p>Thinly sliced smoked beef,cheddar, onions, dijon-horseradish mayo, lettuce, w/  chips.</p>
+                        <p>Thinly sliced smoked beef, cheddar, onions, Dijon-horseradish mayo and lettuce. Served with chips.</p>
                     </div>
                 </div>
                 <div class="menu-item-card">
-                    <img src="turkeycrnch.jpeg" alt="Turkey Crnch Club" class="item-image">
+                    <img src="turkeycrnch.jpeg" alt="Turkey CRNCH Club" class="item-image">
                     <div class="item-content">
                         <div class="item-title-row">
                             <h4>TURKEY CRNCH CLUB</h4>
                             <span class="item-price">$14.99</span>
                         </div>
-                        <p>Roasted turkey, bacon, honey mayo, lettuce,  w/ chips.</p>
+                        <p>Roasted turkey, bacon, honey mayo and lettuce. Served with chips.</p>
                     </div>
                 </div>
                 <div class="menu-item-card">
-                    <img src="tunacrnch.jpeg" alt="Tuna Crnch" class="item-image">
+                    <img src="tunacrnch.jpeg" alt="Tuna CRNCH" class="item-image">
                     <div class="item-content">
                         <div class="item-title-row">
                             <h4>TUNA CRNCH</h4>
                             <span class="item-price">$13.99</span>
                         </div>
-                        <p>Tuna, dill mayo, lettuce,  w/ chips.</p>
+                        <p>Tuna salad with dill mayo and lettuce. Served with chips.</p>
                     </div>
                 </div>
                 <div class="menu-item-card">
-                    <img src="crazycrnch.png" alt="The Crazy Crnch" class="item-image">
+                    <img src="crazycrnch.png" alt="The Crazy CRNCH" class="item-image">
                     <div class="item-content">
                         <div class="item-title-row">
                             <h4>THE CRAZY CRNCH</h4>
                             <span class="item-price">$12.99</span>
                         </div>
-                        <p>Nutella, bananas, w/ chips.</p>
+                        <p>Nutella and bananas. Served with chips.</p>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- 4. PANINI -->
         <div class="category-block">
             <h3 class="category-title">Panini</h3>
             <div class="items-grid">
@@ -675,9 +690,9 @@
                     <div class="item-content">
                         <div class="item-title-row">
                             <h4>CHICKEN PARM</h4>
-                            <span class="item-price" style="font-size: 1rem;">$14.99</span>
+                            <span class="item-price">$14.99</span>
                         </div>
-                        <p>Breaded chicken cutlet, housemade tomato/basil sauce with mozzarella and parmesan cheese.</p>
+                        <p>Breaded chicken cutlet topped with house-made tomato-basil sauce, mozzarella and Parmesan.</p>
                     </div>
                 </div>
 
@@ -686,25 +701,26 @@
                     <div class="item-content">
                         <div class="item-title-row">
                             <h4>SCHNITZEL</h4>
-                            <span class="item-price" style="font-size: 1rem;">$14.99</span>
+                            <span class="item-price">$14.99</span>
                         </div>
-                        <p>Breaded chicken cutlet, romaine lettuce, mustard, and housemade mayonnaise.</p>
+                        <p>Breaded chicken cutlet with romaine lettuce, mustard and house-made mayonnaise.</p>
                     </div>
                 </div>
 
                 <div class="menu-item-card">
-                    <img src="biteme.jpg" alt="Bite-me Panini" class="item-image">
+                    <img src="biteme.jpg" alt="Bite-Me Panini" class="item-image">
                     <div class="item-content">
                         <div class="item-title-row">
                             <h4>BITE-ME</h4>
-                            <span class="item-price" style="font-size: 1rem;">$15.99</span>
+                            <span class="item-price">$15.99</span>
                         </div>
-                        <p>Chicken Parmesan, housemade Bolognese, provolone & parmesan cheese.</p>
+                        <p>Chicken Parmesan topped with house-made Bolognese sauce, provolone and Parmesan.</p>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- 5. SALADS -->
         <div class="category-block">
             <h3 class="category-title">Salads</h3>
             <div class="items-grid">
@@ -713,9 +729,9 @@
                     <div class="item-content">
                         <div class="item-title-row">
                             <h4>CAESAR</h4>
-                            <span class="item-price" style="font-size: 1rem;">SM $7.99 | LG $12.99</span>
+                            <span class="item-price" style="font-size: 1rem;">Small $7.99 | Large $12.99</span>
                         </div>
-                        <p>Homemade caesar dressing, romaine, croutons.</p>
+                        <p>Crisp romaine lettuce, crunchy croutons and house-made Caesar dressing.</p>
                     </div>
                 </div>
                 <div class="menu-item-card">
@@ -723,9 +739,9 @@
                     <div class="item-content">
                         <div class="item-title-row">
                             <h4>GREEK</h4>
-                            <span class="item-price" style="font-size: 1rem;">SM $8.99 | LG $13.99</span>
+                            <span class="item-price" style="font-size: 1rem;">Small $8.99 | Large $13.99</span>
                         </div>
-                        <p>Goat cheese, lettuce, cucumbers, tomatoes, olives, onions, red wine vinaigrette.</p>
+                        <p>Lettuce, cucumbers, tomatoes, olives and onions, topped with goat cheese and red wine vinaigrette.</p>
                     </div>
                 </div>
                 <div class="menu-item-card">
@@ -733,14 +749,15 @@
                     <div class="item-content">
                         <div class="item-title-row">
                             <h4>GARDEN</h4>
-                            <span class="item-price" style="font-size: 1rem;">SM $6.99 | LG $11.99</span>
+                            <span class="item-price" style="font-size: 1rem;">Small $6.99 | Large $11.99</span>
                         </div>
-                        <p>Mix greens, cherry tomatoes, cucumber, honey balsamic dressing.</p>
+                        <p>Mixed greens, cherry tomatoes and cucumber, served with honey-balsamic dressing.</p>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- 6. PASTAS -->
         <div class="category-block">
             <h3 class="category-title">Pastas</h3>
             <div class="items-grid">
@@ -751,8 +768,8 @@
                             <h4>POMODORO</h4>
                             <span class="item-price">$12.99</span>
                         </div>
-                        <p>Spaghetti, Basil garlic tomato sauce.</p>
-                        <span class="addon-tag">+ Add Meatball $5</span>
+                        <p>Spaghetti tossed in a garlic and basil tomato sauce.</p>
+                        <span class="addon-tag">Add meatballs +$5</span>
                     </div>
                 </div>
                 <div class="menu-item-card">
@@ -762,8 +779,8 @@
                             <h4>ALFREDO</h4>
                             <span class="item-price">$13.99</span>
                         </div>
-                        <p>Penne, honey cream sauce.</p>
-                        <span class="addon-tag">+ Add Chicken $5</span>
+                        <p>Penne tossed in a creamy sauce.</p>
+                        <span class="addon-tag">Add chicken +$5</span>
                     </div>
                 </div>
                 <div class="menu-item-card">
@@ -773,8 +790,8 @@
                             <h4>BOLOGNESE</h4>
                             <span class="item-price">$15.99</span>
                         </div>
-                        <p>Rigatoni w/ beef basil tomato sauce.</p>
-                        <span class="addon-tag">+ Add Chicken $5</span>
+                        <p>Rigatoni tossed in a rich beef and basil tomato sauce.</p>
+                        <span class="addon-tag">Add chicken +$5</span>
                     </div>
                 </div>
                 <div class="menu-item-card">
@@ -784,8 +801,8 @@
                             <h4>ALLA VODKA</h4>
                             <span class="item-price">$14.99</span>
                         </div>
-                        <p>Penne w/ tomato, cream basil rose sauce.</p>
-                        <span class="addon-tag">+ Add Chicken $5</span>
+                        <p>Penne tossed in a creamy tomato and basil rosé sauce.</p>
+                        <span class="addon-tag">Add chicken +$5</span>
                     </div>
                 </div>
                 <div class="menu-item-card">
@@ -795,8 +812,8 @@
                             <h4>PESTO</h4>
                             <span class="item-price">$14.99</span>
                         </div>
-                        <p>Fettucine w/ cream pesto mushroom sauce.</p>
-                        <span class="addon-tag">+ Add Chicken $5</span>
+                        <p>Fettuccine tossed in a creamy pesto and mushroom sauce.</p>
+                        <span class="addon-tag">Add chicken +$5</span>
                     </div>
                 </div>
                 <div class="menu-item-card">
@@ -806,12 +823,13 @@
                             <h4>LASAGNA</h4>
                             <span class="item-price">$16.99</span>
                         </div>
-                        <p>All beef, tomato sauce, mozzarella, parmesan.</p>
+                        <p>Layers of pasta, seasoned ground beef, tomato sauce, mozzarella and Parmesan.</p>
                     </div>
                 </div>
             </div>
         </div>
  
+        <!-- 7. DAILY SPECIALS -->
         <div class="category-block">
             <h3 class="category-title">Daily Specials</h3>
             <div class="items-grid">
@@ -819,43 +837,44 @@
                     <img src="pasta special.jpg" alt="Pasta Combo" class="item-image">
                     <div class="item-content">
                         <div class="item-title-row">
-                            <h4>Pasta Combo</h4>
+                            <h4>PASTA COMBO</h4>
                             <span class="item-price">$20.99</span>
                         </div>
-                        <p>Pomodoro Pasta Served with a side salad and your choice of a regular drink.</p>
+                        <p>Pomodoro pasta served with a side salad and your choice of a regular drink.</p>
                     </div>
                 </div>
                 <div class="menu-item-card">
-                    <img src="combo1.jpg" alt="dinner for two" class="item-image">
+                    <img src="combo1.jpg" alt="Dinner for Two" class="item-image">
                     <div class="item-content">
                         <div class="item-title-row">
                             <h4>DINNER FOR TWO</h4>
                             <span class="item-price">$27.99</span>
                         </div>
-                        <p>Bowl & Crnchwich Combo : Choose any one bread bowl and any one crunchwich</p>
+                        <p>Choose one bread bowl and one CRNCHwich.</p>
                     </div>
                 </div>
                 <div class="menu-item-card">
-                    <img src="combo2.jpg" alt="Bowl, Drink & Cannoli" class="item-image">
+                    <img src="combo2.jpg" alt="Bowl, Drink &amp; Cannoli" class="item-image">
                     <div class="item-content">
                         <div class="item-title-row">
-                            <h4>BOWL, DRINK & CANNOLI</h4>
+                            <h4>BOWL, DRINK &amp; CANNOLI</h4>
                             <span class="item-price">$19.99</span>
                         </div>
-                        <p>Any bowl served with your choice of a regular drink and a fresh cannoli.</p>
+                        <p>Any bread bowl served with your choice of a regular drink and a fresh cannoli.</p>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- 8. ADD-ONS -->
         <div class="category-block">
-            <h3 class="category-title">Add Ons</h3>
+            <h3 class="category-title">Add-Ons</h3>
             <div class="items-grid">
                 
                 <div class="menu-item-card" style="border-top: 5px solid var(--primary-color);">
                     <div class="item-content">
                         <div class="item-title-row">
-                            <h4>Veggies</h4>
+                            <h4>VEGGIES</h4>
                             <span class="item-price">$1</span>
                         </div>
                         <ul style="list-style: none; color: var(--text-main); font-weight: 800; font-size: 1.15rem; padding-top: 0.5rem; line-height: 2;">
@@ -872,7 +891,7 @@
                 <div class="menu-item-card" style="border-top: 5px solid var(--primary-color);">
                     <div class="item-content">
                         <div class="item-title-row">
-                            <h4>Premium Meats</h4>
+                            <h4>PREMIUM MEATS</h4>
                             <span class="item-price">$5</span>
                         </div>
                         <ul style="list-style: none; color: var(--text-main); font-weight: 800; font-size: 1.15rem; padding-top: 0.5rem; line-height: 2;">
@@ -886,7 +905,7 @@
                 <div class="menu-item-card" style="border-top: 5px solid var(--primary-color);">
                     <div class="item-content">
                         <div class="item-title-row">
-                            <h4>Deli Meats</h4>
+                            <h4>DELI MEATS</h4>
                             <span class="item-price">$2</span>
                         </div>
                         <ul style="list-style: none; color: var(--text-main); font-weight: 800; font-size: 1.15rem; padding-top: 0.5rem; line-height: 2;">
@@ -902,7 +921,7 @@
                 <div class="menu-item-card" style="border-top: 5px solid var(--primary-color);">
                     <div class="item-content">
                         <div class="item-title-row">
-                            <h4>Cheeses</h4>
+                            <h4>CHEESES</h4>
                             <span class="item-price">$3</span>
                         </div>
                         <ul style="list-style: none; color: var(--text-main); font-weight: 800; font-size: 1.15rem; padding-top: 0.5rem; line-height: 2;">
@@ -910,7 +929,7 @@
                             <li>Provolone</li>
                             <li>Parmesan</li>
                             <li>Cheddar</li>
-                            <li>Smoked Mozzarella</li>
+                            <li>Smoked mozzarella</li>
                         </ul>
                     </div>
                 </div>
@@ -918,8 +937,9 @@
             </div>
         </div>
 
+        <!-- 9. DESSERTS & DRINKS -->
         <div class="category-block" style="margin-bottom: 1rem;">
-            <h3 class="category-title">Desserts & Drinks</h3>
+            <h3 class="category-title">Desserts &amp; Drinks</h3>
             <div class="items-grid">
                 
                 <div class="menu-item-card">
@@ -929,15 +949,15 @@
                             <h4 style="color: var(--primary-color);">DESSERTS</h4>
                         </div>
                         <ul style="list-style: none; padding-top: 0.5rem; line-height: 2;">
-                            <li style="display: flex; justify-content: space-between; font-weight: 800; font-size: 1.15rem;"><span>Mini Cannoli</span> <span style="color: var(--primary-color);">$2.75/ea.</span></li>
-                            <li style="display: flex; justify-content: space-between; font-weight: 800; font-size: 1.15rem;"><span>Gelato </span> <span style="color: var(--primary-color);">$5.50</span></li>
-                            <li style="display: flex; justify-content: space-between; font-weight: 800; font-size: 1.15rem;"><span>Bread Pudding </span> <span style="color: var(--primary-color);">$4.99</span></li>
+                            <li style="display: flex; justify-content: space-between; font-weight: 800; font-size: 1.15rem;"><span>Mini Cannoli</span> <span style="color: var(--primary-color);">$2.75 each</span></li>
+                            <li style="display: flex; justify-content: space-between; font-weight: 800; font-size: 1.15rem;"><span>Gelato</span> <span style="color: var(--primary-color);">$5.50</span></li>
+                            <li style="display: flex; justify-content: space-between; font-weight: 800; font-size: 1.15rem;"><span>Bread Pudding</span> <span style="color: var(--primary-color);">$4.99</span></li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="menu-item-card">
-                    <img src="drinks.png" alt="Cold Drinks" class="item-image">
+                    <img src="drinks.png" alt="Regular Drinks" class="item-image">
                     <div class="item-content">
                         <div class="item-title-row">
                             <h4 style="color: var(--primary-color);">REGULAR DRINKS</h4>
@@ -963,7 +983,7 @@
                         </div>
                         <ul style="list-style: none; padding-top: 0.5rem; line-height: 2; font-weight: 800; font-size: 1.15rem; color: var(--text-main);">
                             <li>Pop Shoppe</li>
-                            <li>San Pelligrino</li>
+                            <li>San Pellegrino</li>
                             <li>Perrier</li>
                             <li>Poppi</li>
                         </ul>
@@ -975,33 +995,35 @@
 
     </section>
 
+    <!-- 10. CATERING -->
     <section id="catering" style="background-color: #000000; width: 100%; padding: 6rem 5% 2rem 5%; border-top: 5px solid var(--primary-color);">
         <div style="max-width: 1300px; margin: 0 auto; text-align: center;">
             <h2 class="main-section-title" style="color: #ffffff;">Catering</h2>
             <div class="content-block" style="background-color: transparent; border: none; box-shadow: none; padding-bottom: 0;">
-                <h3 class="category-title" style="border: none; padding: 0; color: #ffffff;">Bring CRNCH To Your Next Party</h3>
-                <p style="color: #cccccc;">From corporate lunches to family gatherings, we've got you covered with our customizable bread bowl and sandwich platters. Let us handle the food so you can enjoy the party!</p>
+                <h3 class="category-title" style="border: none; padding: 0; color: #ffffff;">BRING CRNCH TO YOUR NEXT PARTY!</h3>
+                <p style="color: #cccccc;">From corporate lunches to family gatherings, we’ve got you covered with customizable bread bowl and sandwich platters.<br>Let us take care of the food so you can sit back, relax and enjoy the party!</p>
                 <a href="#contact" class="nav-highlight" style="display: inline-block; padding: 0.8rem 2rem; font-size: 1.2rem; margin-top: 1rem;">INQUIRE NOW</a>
             </div>
         </div>
     </section>
 
+    <!-- 11 & 12. FIND US HERE / CONTACT & FOOTER -->
     <section id="contact" class="full-width-contact">
         <div class="contact-image">
-            <img src="footer.jpg" alt="Visit CRNCH & Co">
+            <img src="footer.jpg" alt="Visit CRNCH &amp; CO.">
         </div>
         <div class="contact-info">
-            <h2 style="color:#8E2020 ;">Find Us Here</h2>
+            <h2>Find Us Here</h2>
             
             <div class="contact-details">
-                <p class="address-text">850 King St West, Toronto, ON</p>
+                <p class="address-text">850 King Street West, Toronto, ON</p>
                 <span class="contact-divider">•</span>
-                <p class="email-text">info@eatcrnch.com</p>
+                <p class="email-text"><a href="mailto:info@eatcrnch.com">info@eatcrnch.com</a></p>
                 <span class="contact-divider">•</span>
-                <p class="phone-text">(416) 363-9100</p>
+                <p class="phone-text"><a href="tel:4163639100">(416) 363-9100</a></p>
             </div>
 
-            <p class="copyright">&copy; 2026 CRNCH & Co. All rights reserved.</p>
+            <p class="copyright">&copy; 2026 CRNCH &amp; CO. All rights reserved.</p>
         </div>
     </section>
 
